@@ -22,11 +22,13 @@ def Fatality(fatality):
         fatal = fatality[f]
         for u in unknown:
             if re.match("(?i)"+u,fatal):
-                survival.append("Unknown")
+                fatality[f] = ("Unknown")
         for n in n_fatal:
             if re.match("(?i)"+n,fatal):
-                survival.append("N")
+                fatality[f] = ("N")
         for y in y_fatal:
             if re.match("(?i)"+y,fatal):
-                survival.append("Y")
-    return survival
+                fatality[f] = "Y"
+        if fatality[f]!="Y" and fatality[f]!="N" and fatality[f]!="Unknown":
+            fatality[f] = "Unknown"
+    return fatality
