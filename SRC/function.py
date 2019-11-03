@@ -3,6 +3,7 @@ import re
 
 def renameF(df,column,old,new):
     df[column] = df[column].replace(old, new)
+    
 
 def findF(values,key_word):
     if re.search("(?i)"+key_word+".+",values):
