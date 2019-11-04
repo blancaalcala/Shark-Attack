@@ -1,13 +1,13 @@
-COUNTRY,TIME,TYPE,ATTACKS
-USA,Day,Unprovoked,115
-USA,Night,Provoked,2
-USA,Day,Unprovoked,11
-USA,Night,Provoked,1
-AUSTRALIA,Day,Unprovoked,0
-AUSTRALIA,Night,Provoked,0
-AUSTRALIA,Day,Unprovoked,0
-AUSTRALIA,Night,Provoked,0
-SOUTH AFRICA,Day,Unprovoked,0
-SOUTH AFRICA,Night,Provoked,0
-SOUTH AFRICA,Day,Unprovoked,0
-SOUTH AFRICA,Night,Provoked,0
+TIME,TYPE,ATTACKS
+Day,Unprovoked,115
+Night,Provoked,2
+Day,Unprovoked,11
+Night,Provoked,1
+Day,Unprovoked,0
+Night,Provoked,0
+Day,Unprovoked,0
+Night,Provoked,0
+Day,Unprovoked,0
+Night,Provoked,0
+Day,Unprovoked,0
+Night,Provoked,0
