@@ -1,6 +1,26 @@
 # write your functions here:
 import re 
 
+def Check_duplicates(e):
+    duplicates = e[e.duplicated()]
+    return len(duplicates)
+
+
+def Check_names(names):
+    names = names.strip()
+    if re.search("male*",names) or re.search("boy.*",names) or re.search("nan$",names):
+        names = "Unknown"
+    elif re.search("Occupant:+",names):
+        names = re.sub("Occupant: ","",names)
+        names = re.findall("[A-Z][a-z]+\s[A-Z][a-z]+",names)
+    elif re.search("[A-Z][a-z]+\s[A-Z][a-z]+",names):
+        x = re.search("[A-Z][a-z]+\s[A-Z][a-z]+",names)
+        names = x.group(0)
+    else:
+        names = "Unknown"
+    return names
+
+
 def renameF(df,column,old,new):
     df[column] = df[column].replace(old, new)
     
