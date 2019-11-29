@@ -1,10 +1,6 @@
 # write your functions here:
 import re 
 
-def Check_duplicates(e):
-    duplicates = e[e.duplicated()]
-    return len(duplicates)
-
 
 def Check_names(names):
     names = names.strip()
